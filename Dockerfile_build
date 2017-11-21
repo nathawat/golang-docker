@@ -1,0 +1,7 @@
+FROM golang:1.9.2-alpine
+ENV DBHOST=dockermongo
+ENV CGO_ENABLED=0 
+ENV GOOS=darwin
+WORKDIR /api/src
+ENTRYPOINT [ "go" ]
+CMD [ "run" ]
